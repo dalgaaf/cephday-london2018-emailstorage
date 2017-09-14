@@ -1,29 +1,25 @@
-@import url(//fonts.googleapis.com/css?family=Cabin:400,700);
-@import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
 
 .reveal {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: normal;
-    color: #555555;
-
-    strong {
-      color: black;
-    }
+    font-size: 42px;
 
     section img {
         /* Disable background 4px border around images */
         border: none;
         background: none;
         /* Disable box shadow around images */
-	box-shadow: none;
+        box-shadow: none;
 
         /* Blow image up to full screen size */
         height: auto;
         width: 100%;
-        max-width: 80%;
-        max-height: 80%;
         margin: 2%;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     /* Make sure keyboard shortcuts help is visible */
@@ -37,54 +33,55 @@
     iframe {
         height: 90%;
         width: 100%;
-        margin: 2%;
+        margin: 1%;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 2.6em;
+        /* change spacing for Roboto */
+        letter-spacing: -2px;
+        margin-top: 1rem;
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 1.8em;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
     }
 
     h3 {
-        font-size: 1.5em;
+        /* before 1.5em */
+        margin-top: 1.0em;
+        font-size: 1.0em;
     }
 
-    h1, h2 {
-        text-stroke: 1px black;
-        text-shadow:
-            3px 3px 0 #000,
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-        color: white;
-    }
-
-    h3, h4, h5, h6 {
-        text-shadow: none;
-        color: grey;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Cabin", sans-serif;
+    h1, h2, h3, h4, h5 {
+        font-family: "Roboto", sans-serif;
         font-weight: bold;
-        text-transform: uppercase;
-	strong {
-            color: black;
-	    text-shadow: none;
-	    font-weight: bold;
-	}
+        text-transform: none !important;
+        color: black;
+    }
+
+    h6 {
+        font-size: 2em;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        text-transform: initial;
+        color: black;
+    }
+
+    table, td, tr {
+        border-style: hidden;
+    }
+
+    sup {
+        font-size: 50%;
     }
 
     .progress span {
         background-color: black
-    }
-
-    sub {
-        font-size: 25%;
     }
 
     .controls {
@@ -106,12 +103,11 @@
     }
 
     a {
-        font-family: "Special Elite", monospace !important;
         white-space: nowrap;
     }
 
     code {
-        font-family: "Special Elite", monospace !important;
+        font-family: "Source Code Pro", monospace !important;
         color: black !important;
         text-shadow: none;
         text-transform: none;
@@ -120,44 +116,14 @@
     pre code {
         font-family: "Source Code Pro", monospace !important;
         background: inherit !important;
+        line-height: 1.2;
+        font-size: 1.3em;
         text-shadow: none;
         text-transform: none;
-    }
-
-    blockquote, q {
-        quotes: "“" "”" "‘" "’";
-        &:before {
-            content: open-quote;
-        }
-        &:after {
-            content: close-quote;
-        }
-    }
-
-    blockquote {
-        background: #f9f9f9;
-        border-left: 10px solid #ccc;
-        margin: 1.5em 10px;
-        padding: 0.5em 10px;
-
-        &:before, &:after {
-            color: #ccc;
-            font-size: 4em;
-            line-height: 0.1em;
-            vertical-align: -0.4em;
-        }
-
-        &:before {
-            margin-right: 0.25em;
-        }
-
-        &:after {
-            margin-left: 0.25em;
-        }
-
-        p {
-            display: inline;
-        }
+        font-weight: normal;
+        min-height: 500px;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .stamp {
@@ -173,12 +139,45 @@
         margin-top:-10vh;
         text-shadow: none;
     }
+}
 
-    .caption {
-        position: absolute;
-	right: 0;
-	bottom: 0;
-        font-size: small;
+.reveal .slides {
+        text-align: left;
+}
+
+.section-break {
+    .reveal .slides {
+        $left-margin: 2%;
+        $top-margin: 3%;
+        $bg-height: 100% - (2 * $top-margin);
+        $width: 100% - (2 * $left-margin);
+
+        > section {
+            padding: 0;
+            height: 30%;
+            position: absolute;
+            top: 40%;
+            text-align: left;
+
+            h1, h2 {
+                color: black;
+            }
+
+            h1 {
+                font-size: 3em;
+                font-weight: bold;
+                //text-transform: uppercase !important;
+            }
+
+            h2 {
+                font-size: 32pt;
+                font-weight: normal;
+            }
+
+            code {
+                color: black !important;
+            }
+        }
     }
 }
 
@@ -190,4 +189,3 @@
     }
 }
 
-@import 'qrcode';
