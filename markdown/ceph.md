@@ -11,12 +11,12 @@ NOTE: well known picture, short info on components
 <!-- .slide: data-state="normal" id="motivation-goals" data-timing="20s" data-menu-title="Goals" -->
 ## Motivation
 
-* Scale-out vs Scale-up
-* Fast self healing
-* Commodity hardware
-* Prevent vendor lock-in
-* Open Source where feasible
-* Reduce Total Cost of Ownership (TCO)
+* Scale-out vs Scale-up <!-- .element class="fragment" -->
+* Fast self healing <!-- .element class="fragment" -->
+* Commodity hardware <!-- .element class="fragment" -->
+* Prevent vendor lock-in <!-- .element class="fragment" -->
+* Open Source where feasible <!-- .element class="fragment" -->
+* Reduce Total Cost of Ownership (TCO) <!-- .element class="fragment" -->
 
 
 <!-- .slide: data-state="normal" id="ceph-store-emails-1" data-timing="20s" data-menu-title="Ceph: Options" -->
