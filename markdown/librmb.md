@@ -51,7 +51,7 @@
 <div>
      <img style="width:30%; left: 65%; position: absolute" alt="Ceph Plugin basics"
           data-src="images/dovecot-plugin-simple.svg" />
-</div>
+</div> <!-- .element class="fragment" data-fragment-index="3"-->
 
 ### First Step: hybrid approach <!-- .element class="fragment" data-fragment-index="0"-->
 
@@ -61,9 +61,9 @@
 ### Metadata and indexes <!-- .element class="fragment" data-fragment-index="2"-->
 * Store in CephFS <!-- .element class="fragment" data-fragment-index="2"-->
 
-### Be as generic as possible <!-- .element class="fragment" data-fragment-index="3"-->
-* Split out code into libraries <!-- .element class="fragment" data-fragment-index="3"-->
-* Integrate into corresponding upstream projects <!-- .element class="fragment" data-fragment-index="3"-->
+### Be as generic as possible <!-- .element class="fragment" data-fragment-index="4"-->
+* Split out code into libraries <!-- .element class="fragment" data-fragment-index="4"-->
+* Integrate into corresponding upstream projects <!-- .element class="fragment" data-fragment-index="4"-->
 
 
 <!-- .slide: data-state="normal" id="librmb-DT-2.0" data-timing="20s" data-menu-title="librmb" -->
@@ -152,6 +152,11 @@ MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
 
 <!-- .slide: data-state="normal" id="librmb-DT-3" data-timing="20s" data-menu-title="librmb" -->
 ## It's open source!
+
+<div>
+    <img style="position: absolute; width: 50%; left: 55%;" alt="Github Project Screenshot"
+         data-src="images/github-ceph-dovecot.png" />
+</div> <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ### <span>License: `LGPLv2.1`</span><!-- .element: class="fragment" data-fragment-index="0" -->
 
