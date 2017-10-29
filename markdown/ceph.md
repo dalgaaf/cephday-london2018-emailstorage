@@ -8,35 +8,11 @@
 NOTE: well known picture, short info on components
 
 
-<!-- .slide: data-state="normal" id="motivation-goals" data-timing="20s" data-menu-title="Goals" -->
-## Motivation
-
-* Scale-out vs Scale-up <!-- .element class="fragment" -->
-* Fast self healing <!-- .element class="fragment" -->
-* Commodity hardware <!-- .element class="fragment" -->
-* Prevent vendor lock-in <!-- .element class="fragment" -->
-* Open Source where feasible <!-- .element class="fragment" -->
-* Reduce Total Cost of Ownership (TCO) <!-- .element class="fragment" -->
-
-
-<!-- .slide: data-state="normal" id="ceph-store-emails-1" data-timing="20s" data-menu-title="Ceph: Options" -->
-## Ceph Options
-
-### Filesystem <!-- .element class="fragment" data-fragment-index="1"-->
-  * CephFS <!-- .element class="fragment" data-fragment-index="1"-->
-  * NFS Gateway via RGW <!-- .element class="fragment" data-fragment-index="1"-->
-  * Any filesystem on RBD <!-- .element class="fragment" data-fragment-index="1"-->
-
-### Objectstore <!-- .element class="fragment" data-fragment-index="2"-->
-  * S3/Swift via RGW <!-- .element class="fragment" data-fragment-index="2"-->
-  * RADOS <!-- .element class="fragment" data-fragment-index="2"-->
-
-
 <!-- .slide: data-state="normal" id="ceph-store-emails-2" data-timing="20s" data-menu-title="Ceph: Option CephFS" -->
 ## Where to store in Ceph?
 
 <div>
-    <img style="position: absolute; left: 30%;" alt="CephFS"
+    <img style="width: 35%; left: 60%; position: absolute" alt="CephFS"
          data-src="images/cephfs.svg" />
 </div>
 
@@ -48,14 +24,17 @@ NOTE: well known picture, short info on components
 * usable for metadata/caches/indexes <!-- .element class="fragment" -->
 <br>
 <br>
-<br>
+
+#### <b>Security</b> <!-- .element class="fragment" -->
+* requires direct access to storage network <!-- .element class="fragment" -->
+* only for dedicated platform <!-- .element class="fragment" -->
 
 
 <!-- .slide: data-state="normal" id="ceph-store-emails-3" data-timing="20s" data-menu-title="Ceph: Option RBD" -->
 ## Where to store in Ceph?
 
 <div>
-    <img style="position: absolute; left: 30%;" alt="RBD"
+    <img style="width: 35%; left: 60%; position: absolute" alt="RBD"
          data-src="images/rbd.svg" />
 </div>
 
@@ -69,12 +48,16 @@ NOTE: well known picture, short info on components
 <br>
 <br>
 
+#### <b>Security</b> <!-- .element class="fragment" -->
+* no direct access to storage network required <!-- .element class="fragment" -->
+* secure through hypervisor abstraction (libvirt) <!-- .element class="fragment" -->
+
 
 <!-- .slide: data-state="normal" id="ceph-store-emails-4" data-timing="20s" data-menu-title="Ceph: Option RadosGW" -->
 ## Where to store in Ceph?
 
 <div>
-    <img style="position: absolute; left: 30%;" alt="RGW"
+    <img style="width: 35%; left: 60%; position: absolute" alt="RGW"
          data-src="images/rgw.svg" />
 </div>
 
@@ -85,14 +68,17 @@ NOTE: well known picture, short info on components
 * very likely not fast enough <!-- .element class="fragment" -->
 <br>
 <br>
-<br>
+
+#### <b>Security</b> <!-- .element class="fragment" -->
+* no direct access to Ceph storage network required <!-- .element class="fragment" -->
+* connection to RadosGW can be secured (WAF) <!-- .element class="fragment" -->
 
 
 <!-- .slide: data-state="normal" id="ceph-store-emails-5" data-timing="20s" data-menu-title="Ceph: Option librados" -->
 ## Where to store in Ceph?
 
 <div>
-    <img style="position: absolute; left: 30%;" alt="librados"
+    <img style="width: 35%; left: 60%; position: absolute" alt="librados"
          data-src="images/librados.svg" />
 </div>
 
@@ -103,5 +89,7 @@ NOTE: well known picture, short info on components
 * how to handle metadata/caches/indexes? <!-- .element class="fragment" -->
 <br>
 <br>
-<br>
 
+#### <b>Security</b> <!-- .element class="fragment" -->
+* requires direct access to storage network <!-- .element class="fragment" -->
+* only for dedicated platform <!-- .element class="fragment" -->

@@ -17,16 +17,9 @@
 ### Objectstore plugin available (obox) <!-- .element class="fragment" data-fragment-index="2"-->
 * supports only REST APIs like S3/Swift <!-- .element class="fragment" data-fragment-index="2"-->
 * not open source <!-- .element class="fragment" data-fragment-index="2"-->
+* quite complex setup <!-- .element class="fragment" data-fragment-index="2"-->
 * requires Dovecot Pro <!-- .element class="fragment" data-fragment-index="2"-->
 * large impact on TCO <!-- .element class="fragment" data-fragment-index="2"-->
-
-
-<!-- .slide: data-state="normal" id="dovecot-obox" data-timing="20s" data-menu-title="librmb" -->
-## Dovecot Pro obox Plugin
-<div>
-     <img style="width:90%;" alt="obox architecture overview" 
-          data-src="images/dovecot-obox-plugin-architecture-normal.svg" />
-</div>
 
 
 <!-- .slide: data-state="normal" id="librmb-DT" data-timing="20s" data-menu-title="DT's approach" -->
@@ -48,42 +41,17 @@
 
 <!-- .slide: data-state="normal" id="librmb-DT-1" data-timing="20s" data-menu-title="Ceph Dovecot Plugin" -->
 ## Ceph plugin for Dovecot
-<div>
-     <img style="width:30%; left: 65%; position: absolute" alt="Ceph Plugin basics"
-          data-src="images/dovecot-plugin-simple.svg" />
-</div> <!-- .element class="fragment" data-fragment-index="3"-->
-
 ### First Step: hybrid approach <!-- .element class="fragment" data-fragment-index="0"-->
 
 ### Emails <!-- .element class="fragment" data-fragment-index="1"-->
-* Store in RADOS Cluster <!-- .element class="fragment" data-fragment-index="1"-->
+* RADOS Cluster <!-- .element class="fragment" data-fragment-index="1"-->
 
 ### Metadata and indexes <!-- .element class="fragment" data-fragment-index="2"-->
-* Store in CephFS <!-- .element class="fragment" data-fragment-index="2"-->
+* CephFS <!-- .element class="fragment" data-fragment-index="2"-->
 
-### Be as generic as possible <!-- .element class="fragment" data-fragment-index="4"-->
-* Split out code into libraries <!-- .element class="fragment" data-fragment-index="4"-->
+### Generic email abstraction on top of librados <!-- .element class="fragment" data-fragment-index="4"-->
+* Split code into libraries <!-- .element class="fragment" data-fragment-index="4"-->
 * Integrate into corresponding upstream projects <!-- .element class="fragment" data-fragment-index="4"-->
-
-
-<!-- .slide: data-state="normal" id="librmb-DT-2.0" data-timing="20s" data-menu-title="librmb" -->
-## Librados mailbox (librmb)
-
-<span class="fragment" data-fragment-index="0">
-### Generic email abstraction on top of librados <!-- .element: class="fragment" data-fragment-index="0" -->
-</span>
-
-### Out of scope: <!-- .element: class="fragment" data-fragment-index="1" -->
-
-<span class="fragment" data-fragment-index="2">
-* User data and credential storage <!-- .element: class="fragment" data-fragment-index="2" -->
-  * target are huge installations where usually are already solutions in place <!-- .element: class="fragment" data-fragment-index="2" -->
-</span>
-
-<span class="fragment" data-fragment-index="3">
-* Full text indexes <!-- .element: class="fragment" data-fragment-index="3" -->
-  * There are solutions already available and working outside email storage <!-- .element: class="fragment" data-fragment-index="3" -->
-</span>
 
 
 <!-- .slide: data-state="normal" id="librmb-DT-2.1" data-timing="20s" data-menu-title="librmb" -->
@@ -116,29 +84,6 @@
 ### writable attributes are stored in Dovecot index files <!-- .element: class="fragment" data-fragment-index="4" -->
 
 
-<!-- .slide: data-state="normal" id="librmb-DT-2.3" data-timing="20s" data-menu-title="rmb tool" -->
-## Dump email details from RADOS
-
-<pre><code class="none">$> rmb -p mail_storage -N t1 ls M=ad54230e65b49a59381100009c60b9f7
-
-mailbox_count: 1
-
-MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
-         mail_total=2, mails_displayed=2
-         mailbox_size=5539 bytes
-
-         MAIL:   U(uid)=4
-                 oid = a2d69f2868b49a596a1d00009c60b9f7
-                 R(receive_time)=Tue Jan 14 00:18:11 2003
-                 S(save_time)=Mon Aug 21 12:22:32 2017
-                 Z(phy_size)=2919 V(v_size) = 2919 stat_size=2919
-                 M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
-                 G(mail_guid)=a3d69f2868b49a596a1d00009c60b9f7
-                 I(rbox_version): 0.1
-[..]
-</code></pre>
-
-
 <!-- .slide: data-state="normal" id="librmb-DT-2.4" data-timing="20s" data-menu-title="rados-dict" -->
 ## RADOS Dictionary Plugin
 
@@ -155,7 +100,7 @@ MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
 
 <div>
     <img style="position: absolute; width: 50%; left: 55%;" alt="Github Project Screenshot"
-         data-src="images/github-ceph-dovecot.png" />
+         data-src="images/github-ceph-dovecot_new.png" />
 </div> <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ### <span>License: `LGPLv2.1`</span><!-- .element: class="fragment" data-fragment-index="0" -->
@@ -170,26 +115,9 @@ MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
 * 2.3 <!-- .element: class="fragment" data-fragment-index="3" -->
 </span>
 
+### still under development <!-- .element: class="fragment" data-fragment-index="4" -->
 
-<!-- .slide: data-state="normal" id="ceph-requirements" data-timing="20s" data-menu-title="Ceph requirements" -->
-## Ceph Requirements
-
-<span class="fragment" data-fragment-index="0">
-### Performance <!-- .element: class="fragment" data-fragment-index="0" -->
-* Write performance for emails is critical <!-- .element: class="fragment" data-fragment-index="0" -->
-* metadata/index read/write performance <!-- .element: class="fragment" data-fragment-index="0" -->
-</span>
-
-<span class="fragment" data-fragment-index="1">
-### Cost <!-- .element: class="fragment" data-fragment-index="1" -->
-* Erasure Coding (EC) for emails <!-- .element: class="fragment" data-fragment-index="1" -->
-* Replication for CephFS <!-- .element: class="fragment" data-fragment-index="1" -->
-</span>
-
-<span class="fragment" data-fragment-index="2">
-### Reliability <!-- .element: class="fragment" data-fragment-index="2" -->
-* MUST survice failure of disk, server, rack and even fire compartments <!-- .element: class="fragment" data-fragment-index="2" -->
-</span>
+### <span>initial SLES12-SP3 and openSUSE RPMs: https://goo.gl/FymRhu</span> <!-- .element: class="fragment" data-fragment-index="5" -->
 
 
 <!-- .slide: data-state="normal" id="ceph-version" data-timing="20s" data-menu-title="Ceph version" -->
@@ -198,23 +126,20 @@ MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
 <div>
      <img style="width: 55%; left: 50%; position: absolute" alt="ceph luminous"
           data-src="images/ceph-luminous.png" />
-</div> <!-- .element: class="fragment" data-fragment-index="4" -->
+</div> <!-- .element: class="fragment" data-fragment-index="5" -->
 
 ### Required Features: <!-- .element: class="fragment" data-fragment-index="0" -->
 
 * <!-- .element: class="fragment" data-fragment-index="1" --> Bluestore
+  * <!-- .element: class="fragment" data-fragment-index="1" --> write performance is critical
   * <!-- .element: class="fragment" data-fragment-index="1" --> should be at least 2x faster than filestore
 * <!-- .element: class="fragment" data-fragment-index="2" --> CephFS
   * <!-- .element: class="fragment" data-fragment-index="2" --> Stable release
   * <!-- .element: class="fragment" data-fragment-index="2" --> Multi-MDS
 * <!-- .element: class="fragment" data-fragment-index="3" --> Erasure coding
+  * <!-- .element: class="fragment" data-fragment-index="3" --> Cost reduction
+* <!-- .element: class="fragment" data-fragment-index="4" --> Resiliency, reliability and fault tolerance
 
+### Enterprise products used: <!-- .element: class="fragment" data-fragment-index="6" -->
+* <!-- .element: class="fragment" data-fragment-index="6" --> SES 5
 
-<!-- .slide: data-state="normal" id="ceph-suse" data-timing="20s" data-menu-title="SUSE Products" -->
-## SUSE Products to use
-
-### SLES 12-SP3 and SES 5
-<div>
-     <img style="width: 80%;" alt="ceph luminous"
-          data-src="images/SUSE_Products.png" />
-</div>
