@@ -1,6 +1,6 @@
 <!-- .slide: data-state="cover" id="cover-page" data-timing="20" -->
 <br>
-OpenStack Summit - Sydney 2018
+Ceph Day - Germany 2018 / Darmstadt
 <br>
 <br>
 ## Email Storage

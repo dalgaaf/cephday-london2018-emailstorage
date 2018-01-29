@@ -25,7 +25,7 @@
 <!-- .slide: data-state="normal" id="librmb-DT" data-timing="20s" data-menu-title="DT's approach" -->
 ## DT's approach
 <div>
-     <img style="position: absolute; width:40%; left: 70%;" alt="Partner"
+     <img style="position: absolute; width:30%; left: 75%;" alt="Partner"
           data-src="images/partner.png" />
 </div> <!-- .element class="fragment" data-fragment-index="4"-->
 
