@@ -19,8 +19,4 @@
 # Questions?
 
 
-<!-- .slide: data-menu-title="License" class="full-screen" id="license" data-state="blank-slide" -->
-<img data-src="images/by-sa.svg"
-     alt="Creative Commons BY-SA license" />
-
-Note: Add conclusion notes here.
+<!-- .slide: data-menu-title="License" data-background-image="images/by-sa.svg" data-background-size="contain" -->

@@ -6,7 +6,7 @@
 ## Dovecot
 
 <div>
-    <img style="height: 25%; left: 40%; position: absolute" alt="CephFS"
+    <img style="height: 20%; left: 30%; position: absolute" alt="Dovecot Logo"
          data-src="images/dovecot_logo.svg" />
 </div>
 
@@ -25,7 +25,7 @@
 <!-- .slide: data-state="normal" id="librmb-DT" data-timing="20s" data-menu-title="DT's approach" -->
 ## DT's approach
 <div>
-     <img style="position: absolute; width:30%; left: 75%;" alt="Partner"
+     <img style="position: absolute; width:30%; left: 68%;" alt="Partner"
           data-src="images/partner.png" />
 </div> <!-- .element class="fragment" data-fragment-index="4"-->
 
@@ -58,7 +58,7 @@
 ## Librados mailbox (librmb)
 
 <div>
-     <img alt="librmb architecture overview"
+     <img style="width:95%" alt="librmb architecture overview"
           data-src="images/dovecot-plugin-architecture-normal.svg" />
 </div>
 
@@ -99,7 +99,7 @@
 ## It's open source!
 
 <div>
-    <img style="position: absolute; width: 50%; left: 55%;" alt="Github Project Screenshot"
+    <img style="position: absolute; width: 40%; left: 50%;" alt="Github Project Screenshot"
          data-src="images/github-ceph-dovecot_new.png" />
 </div> <!-- .element: class="fragment" data-fragment-index="2" -->
 
@@ -124,7 +124,7 @@
 ## Which Ceph Release?
 
 <div>
-     <img style="width: 55%; left: 50%; position: absolute" alt="ceph luminous"
+     <img style="width: 50%; left: 45%; position: absolute" alt="ceph luminous"
           data-src="images/ceph-luminous.png" />
 </div> <!-- .element: class="fragment" data-fragment-index="5" -->
 

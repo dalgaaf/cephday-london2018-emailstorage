@@ -5,7 +5,7 @@
 <!-- .slide: data-state="normal" id="hardware-0" data-timing="20s" data-menu-title="Hardware" -->
 ## Commodity x86_64 server
 <div>
-     <img style="position: absolute; width: 40%; left: 65%; " alt="librmb architecture overview"
+     <img style="position: absolute; width: 35%; left: 60%; " alt="librmb architecture overview"
           data-src="images/HPE-DL380Gen9.jpg" />
 </div>
 * HPE ProLiant DL380 Gen9

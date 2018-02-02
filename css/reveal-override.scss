@@ -5,7 +5,7 @@
 .reveal {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: normal;
-    font-size: 42px;
+    font-size: 30px;
 
     section img {
         /* Disable background 4px border around images */
@@ -46,9 +46,9 @@
     }
 
     h2 {
-        font-size: 1.8em;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
+        font-size: 1.6em;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     h3 {
@@ -111,13 +111,14 @@
         color: black !important;
         text-shadow: none;
         text-transform: none;
+	letter-spacing: -2px;
     }
 
     pre code {
         font-family: "Source Code Pro", monospace !important;
         background: inherit !important;
         line-height: 1.2;
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-shadow: none;
         text-transform: none;
         font-weight: normal;

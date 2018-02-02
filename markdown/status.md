@@ -37,6 +37,6 @@
 ### Goal: Pure RADOS backend, store metadata/index in Ceph omap
 
 <div>
-     <img style="width: 100%;" alt="librmb architecture overview"
+     <img style="width: 95%;" alt="librmb architecture overview"
           data-src="images/dovecot-plugin-architecture-pure-rados.svg" />
 </div>
