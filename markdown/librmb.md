@@ -25,7 +25,7 @@
 ## Dovecot Pro obox Plugin
 
 <div>
-     <img style="width:95%" alt="obox architecture overview"
+     <img style="width:90%" alt="obox architecture overview"
           data-src="images/dovecot-obox-plugin-architecture-normal.svg" />
 </div>
 
@@ -35,7 +35,7 @@ Note: quite complex setup with many layers of caches
 <!-- .slide: data-state="normal" id="librmb-DT" data-timing="20s" data-menu-title="DT's approach" -->
 ## DT's approach
 <div>
-     <img style="position: absolute; width:30%; left: 68%;" alt="Partner"
+     <img style="position: absolute; width:30%; left: 63%;" alt="Partner"
           data-src="images/partner.png" />
 </div> <!-- .element class="fragment" data-fragment-index="4"-->
 
@@ -44,7 +44,7 @@ Note: quite complex setup with many layers of caches
 * develop / sponsor a solution <!-- .element class="fragment" data-fragment-index="2"-->
 * open source it <!-- .element class="fragment" data-fragment-index="3"-->
 * partner with: <!-- .element class="fragment" data-fragment-index="4"-->
-  * `Wido den Hollander (42on.com)` for consulting <!-- .element class="fragment" data-fragment-index="4"-->
+  * `Wido den Hollander (42on.com)` <!-- .element class="fragment" data-fragment-index="4"-->
   * `Tallence AG` for development <!-- .element class="fragment" data-fragment-index="4"-->
   * `SUSE` for Ceph <!-- .element class="fragment" data-fragment-index="4"-->
 
@@ -70,7 +70,7 @@ Note: out of scope - user data and credential storage; full text search
 ## Librados mailbox (librmb)
 
 <div>
-     <img style="width:95%" alt="librmb architecture overview"
+     <img style="width:90%" alt="librmb architecture overview"
           data-src="images/dovecot-plugin-architecture-normal.svg" />
 </div>
 
@@ -159,7 +159,7 @@ MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
 ## Which Ceph Release?
 
 <div>
-     <img style="width: 50%; left: 45%; position: absolute" alt="ceph luminous"
+     <img style="width: 45%; left: 47%; position: absolute" alt="ceph luminous"
           data-src="images/ceph-luminous.png" />
 </div> <!-- .element: class="fragment" data-fragment-index="5" -->
 

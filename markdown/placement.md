@@ -19,13 +19,13 @@
 
 <!-- .slide: data-state="normal" id="placement-3" data-timing="20s" data-menu-title="3FCs" -->
 <div>
-  <center><img data-src="images/fc-ceph-EC+3xReplication-color.svg" style="width:95%"></center>
+  <center><img data-src="images/fc-ceph-EC+3xReplication-color.svg" style="width:85%"></center>
 </div>
 
 
 <!-- .slide: data-state="normal" id="placement-net-2" data-timing="20s" data-menu-title="Network Overview" -->
 <div>
-  <center><img data-src="images/network-infra-mailplatform.svg" style="width:90%"></center>
+  <center><img data-src="images/network-infra-mailplatform.svg" style="width:85%"></center>
 </div>
 
 Note: 1G OAM, 4x10G ports per node, SFP+ DAC, MC-LAG/M-LAG for aggregation and failoverm 

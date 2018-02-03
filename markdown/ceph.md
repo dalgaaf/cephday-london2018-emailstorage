@@ -3,7 +3,7 @@
 
 
 <!-- .slide: data-state="normal" id="ceph-overview" data-timing="20s" data-menu-title="Ceph Components" -->
-<center><img src="images/ceph-stack.svg" style="width:85%"></center>
+<center><img src="images/ceph-stack.svg" style="width:80%"></center>
 
 NOTE: well known picture, short info on components
 
@@ -12,7 +12,7 @@ NOTE: well known picture, short info on components
 ## Where to store in Ceph?
 
 <div>
-    <img style="width: 35%; left: 60%; position: absolute" alt="CephFS"
+    <img style="width: 35%; left: 55%; position: absolute" alt="CephFS"
          data-src="images/cephfs.svg" />
 </div>
 
@@ -34,7 +34,7 @@ NOTE: well known picture, short info on components
 ## Where to store in Ceph?
 
 <div>
-    <img style="width: 35%; left: 60%; position: absolute" alt="RBD"
+    <img style="width: 35%; left: 55%; position: absolute" alt="RBD"
          data-src="images/rbd.svg" />
 </div>
 
@@ -57,7 +57,7 @@ NOTE: well known picture, short info on components
 ## Where to store in Ceph?
 
 <div>
-    <img style="width: 35%; left: 60%; position: absolute" alt="RGW"
+    <img style="width: 35%; left: 55%; position: absolute" alt="RGW"
          data-src="images/rgw.svg" />
 </div>
 
@@ -78,7 +78,7 @@ NOTE: well known picture, short info on components
 ## Where to store in Ceph?
 
 <div>
-    <img style="width: 35%; left: 60%; position: absolute" alt="librados"
+    <img style="width: 35%; left: 55%; position: absolute" alt="librados"
          data-src="images/librados.svg" />
 </div>
 

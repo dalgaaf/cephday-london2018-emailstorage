@@ -25,6 +25,10 @@
         max-height: 100%;
     }
 
+    section {
+        margin: 2%;
+    }
+
     /* Make sure keyboard shortcuts help is visible */
     .overlay-help .viewport {
         th, td {
@@ -121,6 +125,7 @@
         box-shadow: none;
         padding: 13px 13px;
         background-color: rgb(237, 237, 237);
+        max-width: 80%;
     }
 
     pre code {

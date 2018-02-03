@@ -21,19 +21,19 @@ Note: emails are stored compressed
 <!-- .slide: data-state="normal" id="mailplatform-nfs" data-timing="20s" data-menu-title="NFS" -->
 ## NFS Operations
 
-<center><img src="images/nfs-ops_libreoffice_noframe.png" style="width:100%"></center>
+<center><img src="images/nfs-ops_libreoffice_noframe.png" style="width:90%"></center>
 
 
 <!-- .slide: data-state="normal" id="mailplatform-nfs" data-timing="20s" data-menu-title="NFS" -->
 ## NFS Traffic
 
-<center><img data-src="images/nfs-traffic_libreoffice_noframe.png" style="width:100%"></center>
+<center><img data-src="images/nfs-traffic_libreoffice_noframe.png" style="width:90%"></center>
 
 
 <!-- .slide: data-state="normal" id="mailplatform-nfs-stats" data-timing="20s" data-menu-title="NFS-stats" -->
 ## NFS relevant IOs
 
-<center><img data-src="images/nfs-ops_relevant_libreoffice_noframe.png" style="width:100%"></center>
+<center><img data-src="images/nfs-ops_relevant_libreoffice_noframe.png" style="width:90%"></center>
 
 
 <!-- .slide: data-state="normal" id="mailplatform-mails-dist" data-timing="20s" data-menu-title="email distribution" -->
