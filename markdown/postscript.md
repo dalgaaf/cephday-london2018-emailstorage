@@ -1,6 +1,8 @@
 <!-- .slide: data-state="normal" id="call-to-action" data-menu-title="Call to action" -->
 <div class="call-to-action">
     <h2 class="inside">
+        <br />
+        <br />
         <u><b>Be invited to:</u></b> Participate! <br />
         <br>
         Try it, test it, feedback and report bugs!

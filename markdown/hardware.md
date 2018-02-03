@@ -8,9 +8,21 @@
      <img style="position: absolute; width: 35%; left: 60%; " alt="librmb architecture overview"
           data-src="images/HPE-DL380Gen9.jpg" />
 </div>
-* HPE ProLiant DL380 Gen9
-* 2x Intel® X710-DA2 Dual-port 10G
+* <!-- .element: class="fragment" data-fragment-index="1" --> HPE ProLiant DL380 Gen9
+* <!-- .element: class="fragment" data-fragment-index="2" --> Dual Socket
+  * <!-- .element: class="fragment" data-fragment-index="2" --> Intel Xeon® E5 V4
+* <!-- .element: class="fragment" data-fragment-index="3" --> 2x Intel® X710-DA2 Dual-port 10G
+  * <!-- .element: class="fragment" data-fragment-index="4" --> 40G in total
+* <!-- .element: class="fragment" data-fragment-index="5" --> 2x boot SATA SSDs
+* <!-- .element: class="fragment" data-fragment-index="6" --> HBA, no seprate RAID controller
 
+
+<!-- .slide: data-state="normal" id="hardware-1" data-timing="20s" data-menu-title="Hardware Server specs" -->
+## Commodity x86_64 server
+<div>
+     <img style="position: absolute; width: 35%; left: 60%; " alt="librmb architecture overview"
+          data-src="images/HPE-DL380Gen9.jpg" />
+</div>
 ### CephFS Nodes (MDS, OSDs) <!-- .element: class="fragment" data-fragment-index="0" -->
 * <!-- .element: class="fragment" data-fragment-index="1" --> <b>CPU:</b> 2x E5-2643v4 @ 3.4 GHz, 6 Cores, turbo 3.7GHz
 * <!-- .element: class="fragment" data-fragment-index="1" --> <b>RAM:</b> 256 GByte, DDR4, ECC
@@ -32,8 +44,9 @@
 
 <br>
 ### NUMA, high clocked CPUs and large RAM overkill? <!-- .element: class="fragment" data-fragment-index="1" -->
-* <!-- .element: class="fragment" data-fragment-index="2" --> Vendor did not offer single CPU nodes for number of drives
-* <!-- .element: class="fragment" data-fragment-index="3" --> MDS performance is mostly CPU clock bound and partly single threaded
-  * <!-- .element: class="fragment" data-fragment-index="3" --> High clocked CPUs for fast single thread performance
-* <!-- .element: class="fragment" data-fragment-index="4" --> Large RAM: better caching!
+* <!-- .element: class="fragment" data-fragment-index="2" --> It's PoC hardware! Better save than sorry!
+* <!-- .element: class="fragment" data-fragment-index="3" --> Vendor did not offer single CPU nodes for number of drives
+* <!-- .element: class="fragment" data-fragment-index="4" --> MDS performance is mostly CPU clock bound and partly single threaded
+  * <!-- .element: class="fragment" data-fragment-index="4" --> High clocked CPUs for fast single thread performance
+* <!-- .element: class="fragment" data-fragment-index="5" --> Large RAM: better caching!
 

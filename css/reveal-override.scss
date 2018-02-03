@@ -1,6 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro);
+
+
 
 .reveal {
     font-family: "Open Sans Condensed", sans-serif;
@@ -111,7 +114,13 @@
         color: black !important;
         text-shadow: none;
         text-transform: none;
-	letter-spacing: -2px;
+        letter-spacing: -2px;
+    }
+
+    pre {
+        box-shadow: none;
+        padding: 13px 13px;
+        background-color: rgb(237, 237, 237);
     }
 
     pre code {
@@ -122,9 +131,9 @@
         text-shadow: none;
         text-transform: none;
         font-weight: normal;
-        min-height: 500px;
         max-height: 100%;
         max-width: 100%;
+        letter-spacing: 0px !important;
     }
 
     .stamp {
@@ -190,3 +199,4 @@
     }
 }
 
+@import '_suse-syntax-highlighting';

@@ -15,11 +15,21 @@
 ### 72% market share (openemailsurvey.org, 02/2017) <!-- .element class="fragment" data-fragment-index="1"-->
 
 ### Objectstore plugin available (obox) <!-- .element class="fragment" data-fragment-index="2"-->
-* supports only REST APIs like S3/Swift <!-- .element class="fragment" data-fragment-index="2"-->
-* not open source <!-- .element class="fragment" data-fragment-index="2"-->
-* quite complex setup <!-- .element class="fragment" data-fragment-index="2"-->
-* requires Dovecot Pro <!-- .element class="fragment" data-fragment-index="2"-->
-* large impact on TCO <!-- .element class="fragment" data-fragment-index="2"-->
+* supports only REST APIs like S3/Swift <!-- .element class="fragment" data-fragment-index="3"-->
+* not open source <!-- .element class="fragment" data-fragment-index="4"-->
+* requires Dovecot Pro licence <!-- .element class="fragment" data-fragment-index="5"-->
+  * large impact on TCO <!-- .element class="fragment" data-fragment-index="5"-->
+
+
+<!-- .slide: data-state="normal" id="dovecot-obox" data-timing="20s" data-menu-title="Dovecot obox" -->
+## Dovecot Pro obox Plugin
+
+<div>
+     <img style="width:95%" alt="obox architecture overview"
+          data-src="images/dovecot-obox-plugin-architecture-normal.svg" />
+</div>
+
+Note: quite complex setup with many layers of caches
 
 
 <!-- .slide: data-state="normal" id="librmb-DT" data-timing="20s" data-menu-title="DT's approach" -->
@@ -53,6 +63,8 @@
 * Split code into libraries <!-- .element class="fragment" data-fragment-index="4"-->
 * Integrate into corresponding upstream projects <!-- .element class="fragment" data-fragment-index="4"-->
 
+Note: out of scope - user data and credential storage; full text search
+
 
 <!-- .slide: data-state="normal" id="librmb-DT-2.1" data-timing="20s" data-menu-title="librmb" -->
 ## Librados mailbox (librmb)
@@ -82,6 +94,29 @@
 </span>
 
 ### writable attributes are stored in Dovecot index files <!-- .element: class="fragment" data-fragment-index="4" -->
+
+
+<!-- .slide: data-state="normal" id="librmb-DT-2.3" data-timing="20s" data-menu-title="rmb tool" -->
+## Dump email details from RADOS
+
+<pre><code class="none">$> rmb -p mail_storage -N t1 ls M=ad54230e65b49a59381100009c60b9f7
+
+mailbox_count: 1
+
+MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
+         mail_total=2, mails_displayed=2
+         mailbox_size=5539 bytes
+
+         MAIL:   U(uid)=4
+                 oid = a2d69f2868b49a596a1d00009c60b9f7
+                 R(receive_time)=Tue Jan 14 00:18:11 2003
+                 S(save_time)=Mon Aug 21 12:22:32 2017
+                 Z(phy_size)=2919 V(v_size) = 2919 stat_size=2919
+                 M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
+                 G(mail_guid)=a3d69f2868b49a596a1d00009c60b9f7
+                 I(rbox_version): 0.1
+[..]
+</code></pre>
 
 
 <!-- .slide: data-state="normal" id="librmb-DT-2.4" data-timing="20s" data-menu-title="rados-dict" -->
@@ -141,5 +176,5 @@
 * <!-- .element: class="fragment" data-fragment-index="4" --> Resiliency, reliability and fault tolerance
 
 ### Enterprise products used: <!-- .element: class="fragment" data-fragment-index="6" -->
-* <!-- .element: class="fragment" data-fragment-index="6" --> SES 5
+* <!-- .element: class="fragment" data-fragment-index="6" --> SES 5, SLES 12-SP3
 

@@ -27,3 +27,6 @@
 <div>
   <center><img data-src="images/network-infra-mailplatform.svg" style="width:90%"></center>
 </div>
+
+Note: 1G OAM, 4x10G ports per node, SFP+ DAC, MC-LAG/M-LAG for aggregation and failoverm 
+      interconnect must not reflect theoretical rack/FC bandwidth, L2 terminated in rack, L3 for rest

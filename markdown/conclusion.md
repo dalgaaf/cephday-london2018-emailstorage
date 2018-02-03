@@ -11,11 +11,9 @@
 * <!-- .element: class="fragment" data-fragment-index="3" --> BlueStore, EC
 
 ### librmb and dovecot rbox <!-- .element: class="fragment" data-fragment-index="4" -->
-* <!-- .element: class="fragment" data-fragment-index="5" --> Open Source, LGPLv2.1, no license costs
+* <!-- .element: class="fragment" data-fragment-index="5" --> Open Source, LGPLv2.1
 * <!-- .element: class="fragment" data-fragment-index="6" --> librmb can be used in non-dovecot systems
 * <!-- .element: class="fragment" data-fragment-index="7" --> still under development
 
-### PoC with dovecot in progress <!-- .element: class="fragment" data-fragment-index="8" -->
-
-### Performance optimization <!-- .element: class="fragment" data-fragment-index="9" -->
+### PoC in progress <!-- .element: class="fragment" data-fragment-index="8" -->
 

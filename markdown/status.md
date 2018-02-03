@@ -1,5 +1,11 @@
 <!-- .slide: data-state="section-break" id="section-break-7" data-timing="10s" -->
-# Next Steps
+# Status and Next Steps
+
+
+<!-- .slide: data-state="normal" id="status-1" data-timing="20s" data-menu-title="Functional testing" -->
+## Functional Testing
+
+TBA (5-node cluster in SUSE lab, run functional test, successfully)
 
 
 <!-- .slide: data-state="normal" id="status-2" data-timing="20s" data-menu-title="PoC" -->
@@ -17,6 +23,12 @@
 * <!-- .element: class="fragment" data-fragment-index="5" --> run failure scenarios against Ceph
 * <!-- .element: class="fragment" data-fragment-index="6" --> improve and tune Ceph setup
 * <!-- .element: class="fragment" data-fragment-index="7" --> verify and optimize hardware
+
+
+<!-- .slide: data-state="normal" id="status-3" data-timing="20s" data-menu-title="Issues to solve" -->
+## Issues to be solved
+
+TBA (select erasure code, performance with small writes, compression, OMAP performance, cluster network bandwith)
 
 
 <!-- .slide: data-state="normal" id="status-4" data-timing="20s" data-menu-title="Next Steps" -->

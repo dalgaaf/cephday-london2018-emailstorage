@@ -10,8 +10,8 @@ with
 ## Ceph
 
 <br>
-[`Danny Al-Gaaf`](mailto:danny.al-gaaf@bisect.de)
-
+Danny Al-Gaaf <br>
 Deutsche Telekom AG
 
-<img src="images/T_Logo_3c_p_DE.png" style="width:10%;">
+<br>
+<img src="images/T_Logo_3c_p_DE.png" style="width:15%;">
