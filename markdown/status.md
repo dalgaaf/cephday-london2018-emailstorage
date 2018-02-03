@@ -3,9 +3,16 @@
 
 
 <!-- .slide: data-state="normal" id="status-1" data-timing="20s" data-menu-title="Functional testing" -->
-## Functional Testing
+## Testing
 
-TBA (5-node cluster in SUSE lab, run functional test, successfully)
+### 5-node clusters (SUSE and DT's labs) <!-- .element: class="fragment" data-fragment-index="0" -->
+
+* <!-- .element: class="fragment" data-fragment-index="1" --> Functional IMAP testing against upstream dovecot
+  * <!-- .element: class="fragment" data-fragment-index="2" --> successful!
+  * <!-- .element: class="fragment" data-fragment-index="2" --> fixed issues on the way
+
+* <!-- .element: class="fragment" data-fragment-index="3" --> Functional testing against DT's installation
+  * <!-- .element: class="fragment" data-fragment-index="4" --> in progress
 
 
 <!-- .slide: data-state="normal" id="status-2" data-timing="20s" data-menu-title="PoC" -->
@@ -25,10 +32,20 @@ TBA (5-node cluster in SUSE lab, run functional test, successfully)
 * <!-- .element: class="fragment" data-fragment-index="7" --> verify and optimize hardware
 
 
-<!-- .slide: data-state="normal" id="status-3" data-timing="20s" data-menu-title="Issues to solve" -->
-## Issues to be solved
+<!-- .slide: data-state="normal" id="status-3" data-timing="20s" data-menu-title="Topics to solve" -->
+## Topics to solve
 
-TBA (select erasure code, performance with small writes, compression, OMAP performance, cluster network bandwith)
+### Erasure Coding <!-- .element: class="fragment" data-fragment-index="0" -->
+* <!-- .element: class="fragment" data-fragment-index="1" --> select plugin and profile
+* <!-- .element: class="fragment" data-fragment-index="2" --> EC performance with small writes
+
+### Compression <!-- .element: class="fragment" data-fragment-index="3" -->
+* <!-- .element: class="fragment" data-fragment-index="4" --> BlueStore inline compression
+* <!-- .element: class="fragment" data-fragment-index="5" --> implement support in librmb
+
+### OMAP performance <!-- .element: class="fragment" data-fragment-index="6" -->
+
+### Cluster network bandwidth <!-- .element: class="fragment" data-fragment-index="7" -->
 
 
 <!-- .slide: data-state="normal" id="status-4" data-timing="20s" data-menu-title="Next Steps" -->
@@ -43,7 +60,7 @@ TBA (select erasure code, performance with small writes, compression, OMAP perfo
   * <!-- .element: class="fragment" data-fragment-index="4" --> 15 SSD nodes, 120 OSDs, 175 TiB
 
 
-<!-- .slide: data-state="normal" id="status-3" data-timing="20s" data-menu-title="Further Development" -->
+<!-- .slide: data-state="normal" id="status-5" data-timing="20s" data-menu-title="Further Development" -->
 ## Further Development
 
 ### Goal: Pure RADOS backend, store metadata/index in Ceph omap
