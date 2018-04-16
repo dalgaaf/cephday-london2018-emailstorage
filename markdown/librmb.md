@@ -118,6 +118,8 @@ MAILBOX: M(mailbox_guid)=ad54230e65b49a59381100009c60b9f7
 [..]
 </code></pre>
 
+NOTE: alternative - "rados -p rados_mail --all ls"; "for i in `rados -p rados_mail -N $N ls`; do rados -p rados_mail -N $N stat $i >> stats; done ; sort -k3,3 -k4,4 -n stats ; rm stats" ; "rados -p rados_mail get -N $N $Object_id test; cat test" ; "for i in `rados -p rados_mail listxattr -N $N $Object_id`; do echo -n $i: ; rados -p rados_mail getxattr -N $N $Object_id $i; echo "" ; done"
+
 
 <!-- .slide: data-state="normal" id="librmb-DT-2.4" data-timing="20s" data-menu-title="rados-dict" -->
 ## RADOS Dictionary Plugin
