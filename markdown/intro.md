@@ -1,6 +1,6 @@
 <!-- .slide: data-state="cover" id="cover-page" data-timing="20" -->
 <br>
-Ceph Day - Germany 2018 / Darmstadt
+Ceph Day - London 2018
 <br>
 <br>
 ## Email Storage
