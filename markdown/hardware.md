@@ -8,7 +8,7 @@
      <img style="position: absolute; width: 35%; left: 55%; " alt="librmb architecture overview"
           data-src="images/HPE-DL380Gen9.jpg" />
 </div>
-* <!-- .element: class="fragment" data-fragment-index="1" --> HPE ProLiant DL380 Gen9
+* <!-- .element: class="fragment" data-fragment-index="1" --> HPE ProLiant DL380 Gen9/10
 * <!-- .element: class="fragment" data-fragment-index="2" --> Dual Socket
   * <!-- .element: class="fragment" data-fragment-index="2" --> Intel Xeon® E5 V4
 * <!-- .element: class="fragment" data-fragment-index="3" --> 2x Intel® X710-DA2 Dual-port 10G

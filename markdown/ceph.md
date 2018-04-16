@@ -41,8 +41,8 @@ NOTE: well known picture, short info on components
 ### RBD
 
 * needs sharding and large RBDs <!-- .element class="fragment" -->
-* needs account migration <!-- .element class="fragment" -->
-* needs RBD/fs extend scenarios <!-- .element class="fragment" -->
+* needs account migration and RBD/fs extend scenarios <!-- .element class="fragment" -->
+* still includes POSIX layer like NFS <!-- .element class="fragment" -->
 * no sharing between clients <!-- .element class="fragment" -->
 * impracticable <!-- .element class="fragment" -->
 <br>
