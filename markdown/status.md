@@ -15,6 +15,10 @@
   * <!-- .element: class="fragment" data-fragment-index="4" --> in progress
 
 
+<!-- .slide: data-state="normal" id="status-1.1" data-timing="20s" data-menu-title="Test Mailbox" -->
+<center><img src="images/mailbox_telekom_email_sec.png"></center>
+
+
 <!-- .slide: data-state="normal" id="status-2" data-timing="20s" data-menu-title="PoC" -->
 ## Proof-of-Concept
 
