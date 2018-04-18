@@ -45,11 +45,12 @@
 
 ### Compression <!-- .element: class="fragment" data-fragment-index="3" -->
 * <!-- .element: class="fragment" data-fragment-index="4" --> BlueStore inline compression
-* <!-- .element: class="fragment" data-fragment-index="5" --> implement support in librmb
+* <!-- .element: class="fragment" data-fragment-index="5" --> librmb supports already compression hints
+* <!-- .element: class="fragment" data-fragment-index="6" --> global vs client hints
 
-### OMAP performance <!-- .element: class="fragment" data-fragment-index="6" -->
+### OMAP performance <!-- .element: class="fragment" data-fragment-index="7" -->
 
-### Cluster network bandwidth <!-- .element: class="fragment" data-fragment-index="7" -->
+### Cluster network bandwidth <!-- .element: class="fragment" data-fragment-index="8" -->
 
 
 <!-- .slide: data-state="normal" id="status-4" data-timing="20s" data-menu-title="Next Steps" -->
