@@ -161,8 +161,8 @@ NOTE: alternative - "rados -p rados_mail --all ls"; "for i in `rados -p rados_ma
 ## Which Ceph Release?
 
 <div>
-     <img style="width: 45%; left: 47%; position: absolute" alt="ceph luminous"
-          data-src="images/ceph-luminous.png" />
+     <img style="width: 60%; left: 47%; position: absolute" alt="ceph luminous"
+          data-src="images/luminous_logo.png" />
 </div> <!-- .element: class="fragment" data-fragment-index="5" -->
 
 ### Required Features: <!-- .element: class="fragment" data-fragment-index="0" -->
